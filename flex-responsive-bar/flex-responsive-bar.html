@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Narnoor&family=Poppins&display=swap');
+
+    * {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+        padding: 1rem;
+        background-color: #E9B384;
+        display: flex;
+        color: #7C9D96;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        text-decoration: none;
+        color: #7C9D96;
+        font-size: 1.5rem;
+        /* margin-top: 0; */
+    }
+
+    .navigation {
+        display: flex;
+        list-style-type: none;
+        font-size: 1.5rem;
+    }
+
+    .navigation li {
+        margin-right: 1.2rem;
+    }
+
+    .navigation li a {
+        text-decoration: none;
+        color: #7C9D96;
+    }
+
+    .navigation li a:hover,
+    .nav-logo:hover {
+        color: #9bb1acde;
+        /* background-color: #af8968bd; */
+        /* transform: translateY(-5px); */
+        transition: all .4s;
+    }
+
+    .navigation li:last-child {
+        display: none;
+    }
+
+    @media (max-width:768px) {
+        nav {
+            flex-direction: column;
+            /* justify-content: flex-start; */
+            position: relative;
+            padding: 0;
+        }
+
+        nav a {
+            /* padding: 10px; */
+            padding: 1rem; 
+            align-self: flex-start;
+        }
+
+        .navigation {
+            /* justify-content: flex-start; */
+            /* align-items: stretch; */
+            /* display: flex; */
+            width: 100%;
+            /* margin: 0; */
+            padding: 0;
+            flex-direction: column;
+            
+        }
+
+        .navigation li:not(:last-child){
+            padding : 1rem;
+            text-align: center;
+            border-top: 1px solid #7C9D96;
+            border-bottom: 1px solid #7C9D96;
+            width: 100%;
+        }
+
+        .navigation li:not(:last-child):hover {
+            background-color: #ad937c96;
+        }
+
+
+        
+        .navigation li:last-child {
+            display: block;
+            position: absolute;
+            padding: 1rem;
+            top: 0;
+            right: 1.2rem;
+        }   
+
+        .responsive .navigation li:not(:last-child) {
+            display: none;
+        }
+
+    }
+
+</style>
+
+<body>
+    <nav id="responsive">
+        <a href="#" class="nav-logo">Logo</a>
+        <ul class="navigation">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Product</a>
+            </li>
+            <li class="bar">
+                <a href="#" onclick="responsive()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/076fc71a3c.js" crossorigin="anonymous"></script>
+    <script>
+        function responsive() {
+            let nav = document.querySelector("#responsive");
+            nav.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>
