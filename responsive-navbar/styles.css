@@ -1,0 +1,92 @@
+@import url("base.css");
+@import url('https://fonts.googleapis.com/css2?family=Narnoor&family=Poppins&display=swap');
+
+
+/* navigation main bar */
+
+nav.main-nav {
+    background-color:#DFA878 ;
+    padding: 1rem;
+    box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/* grandbazaar */
+
+.nav-logo {
+    /* display: inline-block; */
+    width: 15%;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: #CEE6F3;
+}
+
+/* navigation list's elements  */
+
+.nav-item {
+    font-size: 2rem;
+    padding: 1rem;
+    display: inline-block;
+    /* text-align: right; */
+}
+
+.nav-item:last-child{
+    display: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color:  #CEE6F3 ;
+}
+
+/* navigation ul */
+
+.nav-items {
+    display: inline-block;
+    text-align: right;
+    /* width: calc(100% - 250px); */
+    width: 70%;
+    margin-right: 0 ;
+}
+
+@media (max-width:768px) {
+    
+    nav.main-nav {
+        padding: 1rem;
+    }
+
+    .nav-logo {
+        display: block;
+    }
+    
+    
+    .nav-item{
+            display: none;
+    }
+
+    .nav-item:last-child {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .responsive .nav-item {
+        display: block;
+        text-align: left;
+        margin: 1rem 0;
+    }
+
+    .responsive  .nav-item:last-child {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+
+}
+

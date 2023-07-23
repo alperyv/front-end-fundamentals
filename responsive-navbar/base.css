@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem ;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
