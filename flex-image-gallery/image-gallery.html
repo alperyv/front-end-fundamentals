@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Narnoor&family=Poppins&display=swap');
+
+            * {
+                font-family: 'Poopins', sans-serif;
+                font-size: 1.6rem;
+            }
+            
+            .header {
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .gallery div {
+                flex-grow: 1;
+                margin: 3px;
+                overflow: hidden;
+            }
+            
+            .gallery div img {
+                width: 100%;
+                height: 100%;
+                transition: transform .3s ease-out;
+            }
+            
+            .gallery div img:hover {
+                transform: scale(1.2);
+            }
+
+    </style>
+
+<body>
+    <div class="header">
+        <h1>
+            Image Gallery
+        </h1>
+    </div>
+    <div class="gallery">
+        <div>
+            <img src="https://picsum.photos/id/235/300/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/236/500/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/237/400/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/238/200/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/239/300/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/231/300/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/230/200/300" alt="">
+        </div>
+
+    </div>
+</body>
+</html>
