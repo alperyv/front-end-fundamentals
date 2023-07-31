@@ -1,0 +1,198 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  .btn {
+    width: 18rem;
+    padding: 1rem 1rem;
+  }
+
+  .row-description {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    height: 120px;
+    justify-content: center;
+  }
+
+  .main-header .span {
+    height: 50%;
+  }
+
+  .main-header .span h1 {
+    font-size: 3.5rem;
+  }
+
+  .main-header .span p {
+    font-size: 1.5rem;
+  }
+
+  .main-nav_items {
+    margin-top: 15px;
+  }
+
+  .main-nav a {
+    padding: 0.4rem;
+    margin: 0 3px;
+  }
+
+  .description {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .description p {
+    max-width: 30rem;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .index-about {
+    height: 100vh;
+  }
+
+  .about-image,
+  .about-image-2 {
+    height: 100vh;
+  }
+
+  .about-des,
+  .about-image,
+  .about-image-2 {
+    width: 100%;
+  }
+
+  .blog-about .article{ 
+    height: 100vh;
+  }
+
+  .rooms {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rooms-des_i {
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+
+  .teams {
+    flex-direction: column;
+  }
+
+  .members {
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+  }
+
+  .contact {
+    flex-direction: row;
+  }
+
+  .gallery-images .column {
+    flex: 50%;
+    padding: 1rem;
+  }
+  .article {
+    flex-direction: column;
+  }
+
+  .blog-about {
+    flex-direction: row;
+  }
+}
+
+.footer-elements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}

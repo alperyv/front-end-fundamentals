@@ -21,3 +21,9 @@ Simple image gallery project.
 It's a very easy layout project, but I think it is important for beginners as a first step.
 
 ![](layout.gif)
+
+* Hotel Site
+
+Hotel Site is my first project this summer. I didn't use any css framework or javascript. It is a theme for hotels. Here is a gif about site.
+
+![](hotel-site.gif)
