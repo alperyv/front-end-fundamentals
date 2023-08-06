@@ -27,3 +27,9 @@ It's a very easy layout project, but I think it is important for beginners as a 
 Hotel Site is my first project this summer. I didn't use any css framework or javascript. It is a theme for hotels. Here is a gif about site.
 
 ![](hotel-site.gif)
+
+* News Site
+
+Here is my new site project News Site. This project's theme is news. It looks like a national news agent's site so you can use for upload your news. 
+
+![](news-site.gif)
